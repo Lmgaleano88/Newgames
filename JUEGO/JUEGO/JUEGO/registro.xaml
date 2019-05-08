@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JUEGO.registro">
+    <ContentPage.Content>
+        <Grid>
+            <!-- Place new controls here -->
+            <Image Source="https://image.freepik.com/vector-gratis/fondo-transparente-videojuegos_6997-1230.jpg"  Aspect="AspectFill"
+                   Opacity="0.2"/>
+            <StackLayout Margin="0,50">
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Nombre" Grid.Row="0" Grid.Column="0" Placeholder="Nombre" Keyboard="Text"/>
+                    </Grid>
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Usuario" Grid.Row="0" Grid.Column="0" Placeholder="Usuario" MaxLength="20" />
+
+                    </Grid>
+
+
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Email" Grid.Row="0" Grid.Column="0" Placeholder="Correo electronico" Keyboard="Text" />
+                    </Grid>
+
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Contraseña" Grid.Row="0" Grid.Column="0" Placeholder="Contraseña" />
+
+                    </Grid>
+
+
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Edad" Grid.Row="0" Grid.Column="0" Placeholder="Edad" MaxLength="3" />
+
+                    </Grid>
+
+
+                </StackLayout>
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Telefono" Grid.Row="0" Grid.Column="0" Placeholder="Numero de telefono" MaxLength="10" />
+
+                    </Grid>
+
+
+                </StackLayout>
+                <Button Text="Continuar" 
+                    BorderRadius="10"
+                    BorderWidth="1"
+                    BackgroundColor="Black"
+                    BorderColor="Purple"
+                    TextColor="White"
+                    Margin="30,0,30,0"
+                    />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

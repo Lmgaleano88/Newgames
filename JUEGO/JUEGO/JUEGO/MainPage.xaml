@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:JUEGO"
+             x:Class="JUEGO.MainPage">
+
+    <Grid>
+        <!-- Place new controls here -->
+        <Image Source="https://i.pinimg.com/474x/73/bf/a3/73bfa3ae382d5c7c8709de964430ad5c--merlin-phone-wallpapers.jpg"  Aspect="AspectFill"/>
+
+        <Grid RowSpacing="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition  ></RowDefinition>
+            </Grid.RowDefinitions>
+            <ImageButton Source="https://www.brandcrowd.com/gallery/brands/pictures/picture14872021216438.png"
+    WidthRequest   ="80"
+    HeightRequest ="80"
+    CornerRadius  ="40"
+    Grid.Column="1"
+    Grid.Row ="1"
+    VerticalOptions ="CenterAndExpand"
+    HorizontalOptions="Center"></ImageButton>
+
+            <Label Text="¿Ya eres usuario?" HorizontalOptions="Center"
+                             VerticalOptions="CenterAndExpand" 
+                            Grid.Column="1" 
+                            Grid.Row="2"
+                              FontAttributes ="bold"
+                           TextColor="White"/>
+
+            <StackLayout Margin="0,50">
+                <StackLayout>
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="Nombre" Grid.Row="0" Grid.Column="0"  
+                     Placeholder="Nombre" BackgroundColor="White" Keyboard="Text" />
+                </Grid>
+                </StackLayout>
+            </StackLayout>
+
+
+            <Button  x:Name="incio"  
+                           Text="Iniciar sesion" TextColor="White" BackgroundColor="black" 
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center" 
+                          Grid.Column="1"
+                           Grid.Row="4" 
+                           BorderRadius="10"
+                           BorderWidth="1"
+                           BorderColor="purple"
+                           FontAttributes="Bold"
+                           Margin="30,0,30,0"/>
+
+                <Button x:Name="Crear" TextColor="White"
+                             Text="Registrarse" BackgroundColor="black" 
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" 
+                           Grid.Column="1"
+                            Grid.Row="5" 
+                            BorderRadius="10"
+                             BorderWidth="1"
+                             BorderColor="Purple"
+                              Margin="30,0,30,0"/>
+            <Label Text="O INICIA SESION CON FACEBOOK"
+                   HorizontalOptions="Center"
+                             VerticalOptions="CenterAndExpand" 
+                            Grid.Column="1" 
+                            Grid.Row="6"
+                              FontAttributes ="bold"
+                           TextColor="White"/>
+            <Button x:Name="Face" TextColor="White" Text="Facebook"
+                    BackgroundColor="Blue" HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                    Grid.Column="1"
+                    Grid.Row="7"
+                    BorderRadius="10"
+                    BorderWidth="1"/>
+
+
+        </Grid>
+        </Grid>
+    
+
+</ContentPage>

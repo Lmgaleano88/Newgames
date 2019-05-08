@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Video_Juego"
+             x:Class="Video_Juego.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <BoxView BackgroundColor="Red" HeightRequest="600" WidthRequest="150" />
+            <Entry />
+        </StackLayout>
+
+</ContentPage>
