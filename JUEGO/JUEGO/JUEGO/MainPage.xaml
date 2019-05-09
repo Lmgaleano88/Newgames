@@ -3,98 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:JUEGO"
              x:Class="JUEGO.MainPage">
+    <ContentPage.Content>
+        <Grid>
+            <!-- Place new controls here -->
+            <Image Source="wallpaper.jpg"  Aspect="AspectFill"/>
+            <BoxView Color="CadetBlue" Opacity="0.6" />
 
-    <Grid>
-        <!-- Place new controls here -->
-        <Image Source="https://i.pinimg.com/474x/73/bf/a3/73bfa3ae382d5c7c8709de964430ad5c--merlin-phone-wallpapers.jpg"  Aspect="AspectFill"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="iconoo.png" 
+                       WidthRequest="100" HeightRequest="100" Margin="0,50,0,0"/>
+                <Label Text="¿Ya eres usuario?" HorizontalOptions="Center" Grid.Row="1" 
+                           TextColor="Black" />
 
-        <Grid RowSpacing="0">
+                <StackLayout Grid.Row="1" Padding="10, 20">
+                    <Entry Placeholder="Email" PlaceholderColor="Black"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="Black" IsPassword="True"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="¿Recuperar contraseña?" TextColor="Black" FontAttributes="Bold" />
+                    </StackLayout>
+                    <Button x:Name="incio" 
+                          TextColor ="White"
+                          Text="Inicio" 
+                          BackgroundColor="CadetBlue"                             
+                          BorderRadius="20"
+                          BorderWidth="1"
+                          BorderColor="Purple"  />
+                    <Button x:Name="Crear" 
+                          TextColor ="White"
+                          Text="Registrase" 
+                          BackgroundColor="CadetBlue"   
+                          BorderRadius="20"
+                          BorderWidth="1"
+                          BorderColor="Purple"/>
+                    
+                    <Label Text="Inicia sesion con" HorizontalOptions="Center" Grid.Row="2" 
+                           TextColor="Black" />
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Image Grid.Row="0" Source="logf.png" WidthRequest="45" HeightRequest="45" />
+                        <Image Grid.Row="0" Source="gmlo.png" WidthRequest="45" HeightRequest="45" />
+                        <Image Grid.Row="0" Source="inst.png" WidthRequest="45" HeightRequest="45" />
+                    </StackLayout>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="25"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="25"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition ></RowDefinition>
-                <RowDefinition  ></RowDefinition>
-            </Grid.RowDefinitions>
-            <ImageButton Source="https://www.brandcrowd.com/gallery/brands/pictures/picture14872021216438.png"
-    WidthRequest   ="80"
-    HeightRequest ="80"
-    CornerRadius  ="40"
-    Grid.Column="1"
-    Grid.Row ="1"
-    VerticalOptions ="CenterAndExpand"
-    HorizontalOptions="Center"></ImageButton>
-
-            <Label Text="¿Ya eres usuario?" HorizontalOptions="Center"
-                             VerticalOptions="CenterAndExpand" 
-                            Grid.Column="1" 
-                            Grid.Row="2"
-                              FontAttributes ="bold"
-                           TextColor="White"/>
-
-            <StackLayout Margin="0,50">
-                <StackLayout>
-                <Grid RowSpacing="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="auto"/>
-
-                    </Grid.ColumnDefinitions>
-                    <Entry x:Name="Nombre" Grid.Row="0" Grid.Column="0"  
-                     Placeholder="Nombre" BackgroundColor="White" Keyboard="Text" />
-                </Grid>
                 </StackLayout>
-            </StackLayout>
-
-
-            <Button  x:Name="incio"  
-                           Text="Iniciar sesion" TextColor="White" BackgroundColor="black" 
-                          HorizontalOptions="Center"
-                          VerticalOptions="Center" 
-                          Grid.Column="1"
-                           Grid.Row="4" 
-                           BorderRadius="10"
-                           BorderWidth="1"
-                           BorderColor="purple"
-                           FontAttributes="Bold"
-                           Margin="30,0,30,0"/>
-
-                <Button x:Name="Crear" TextColor="White"
-                             Text="Registrarse" BackgroundColor="black" 
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" 
-                           Grid.Column="1"
-                            Grid.Row="5" 
-                            BorderRadius="10"
-                             BorderWidth="1"
-                             BorderColor="Purple"
-                              Margin="30,0,30,0"/>
-            <Label Text="O INICIA SESION CON FACEBOOK"
-                   HorizontalOptions="Center"
-                             VerticalOptions="CenterAndExpand" 
-                            Grid.Column="1" 
-                            Grid.Row="6"
-                              FontAttributes ="bold"
-                           TextColor="White"/>
-            <Button x:Name="Face" TextColor="White" Text="Facebook"
-                    BackgroundColor="Blue" HorizontalOptions="Center" 
-                    VerticalOptions="Center"
-                    Grid.Column="1"
-                    Grid.Row="7"
-                    BorderRadius="10"
-                    BorderWidth="1"/>
-
-
+            </Grid>
         </Grid>
-        </Grid>
-    
-
+    </ContentPage.Content>
 </ContentPage>

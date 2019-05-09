@@ -14,17 +14,19 @@ namespace JUEGO
         {
             InitializeComponent();
 
+            incio.Clicked += incio_Clicked;
             Crear.Clicked += crear_Clicked;
-            incio.Clicked += inicio_Clicked;
+           
         }
-
+        private void incio_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new Inicio());
+        }
         private void crear_Clicked(object sender, EventArgs e)
         {
             ((NavigationPage)this.Parent).PushAsync(new registro());
         }
-        private void inicio_Clicked(object sender, EventArgs e)
-        {
-            ((NavigationPage)this.Parent).PushAsync(new Inicio());
-        }
+
+
     }
 }
